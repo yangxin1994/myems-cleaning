@@ -61,8 +61,8 @@ def process(logger):
                 cnx.close()
             time.sleep(60)
             continue
-        print("min_datetime: " + min_datetime.isoformat())
-        print("max_datetime: " + max_datetime.isoformat())
+        print("min_datetime: " + min_datetime.isoformat()[0:19])
+        print("max_datetime: " + max_datetime.isoformat()[0:19])
 
         ################################################################################################################
         # Step 2: check bad case class 1 with high limits and low limits.
