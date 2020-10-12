@@ -171,14 +171,14 @@ def process(logger):
         ################################################################################################################
         print("Step 2: Processing bad case 1.x")
         try:
-            cnx = mysql.connector.connect(**config.myems_system_db)
-            cursor = cnx.cursor(dictionary=True)
+            cnx_system = mysql.connector.connect(**config.myems_system_db)
+            cursor_system = cnx_system.cursor(dictionary=True)
 
             query = (" SELECT id, high_limit, low_limit "
                      " FROM tbl_points "
                      " WHERE object_type='ENERGY_VALUE'")
-            cursor.execute(query)
-            rows_points = cursor.fetchall()
+            cursor_system.execute(query)
+            rows_points = cursor_system.fetchall()
 
             point_dict = dict()
             if rows_points is not None and len(rows_points) > 0:
@@ -187,12 +187,13 @@ def process(logger):
                                              "low_limit": row['low_limit']}
         except Exception as e:
             logger.error("Error in step 2.1 of clean_energy_value.process " + str(e))
-            if cursor:
-                cursor.close()
-            if cnx:
-                cnx.close()
             time.sleep(60)
             continue
+        finally:
+            if cursor_system:
+                cursor_system.close()
+            if cnx_system:
+                cnx_system.close()
 
         try:
             query = (" SELECT id, point_id, actual_value "
