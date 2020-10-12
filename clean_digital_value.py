@@ -32,7 +32,7 @@ def job(logger):
         if cnx:
             cnx.close()
 
-    logger.info("Deleted trend before date time in UTC: " + expired_utc.isoformat())
+    logger.info("Deleted trend before date time in UTC: " + expired_utc.isoformat()[0:19])
 
 
 def process(logger):
