@@ -10,6 +10,8 @@ This service is a component of MyEMS and it cleans the historical data.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ac9730a315c4436cb224dff0eedd7eaf)](https://app.codacy.com/gh/myems/myems-cleaning?utm_source=github.com&utm_medium=referral&utm_content=myems/myems-cleaning&utm_campaign=Badge_Grade)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/myems/myems-cleaning/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/myems/myems-cleaning/?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e81df9e97fb701e0865d/maintainability)](https://codeclimate.com/github/myems/myems-cleaning/maintainability)
+
 
 ### Prerequisites
 
