@@ -8,7 +8,7 @@ MyEMS 数据清洗服务
 
 This service is a component of MyEMS and it cleans the historical data. 
 
-
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/myems/myems-cleaning/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/myems/myems-cleaning/?branch=master)
 
 ### Prerequisites
 
