@@ -4,6 +4,7 @@ myems_system_db = {
     'password': '!MyEMS1',
     'host': '127.0.0.1',
     'database': 'myems_system_db',
+    'port': 3306,
 }
 
 myems_historical_db = {
@@ -11,6 +12,7 @@ myems_historical_db = {
     'password': '!MyEMS1',
     'host': '127.0.0.1',
     'database': 'myems_historical_db',
+    'port': 3306,
 }
 
 # indicates how long analog values and digital values will be kept in database
